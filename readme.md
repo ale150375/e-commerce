@@ -29,20 +29,24 @@ The idea is to recreate the basic functionalities for an e-commerce website.
    ```sh
    npm run build
    ```
+4. Build the project
+   ```sh
+   npm run dev
+   ```
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Search functionality
+- [ ] Cart functionality
+- [ ] Checkout
+- [ ] Highlighted offers
+- [ ] Pagination
+- [ ] Navigation
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+See the [open issues](https://github.com/ale150375/e-commerce/issues) for a full list of proposed features (and known issues).
 
 <br>
 
