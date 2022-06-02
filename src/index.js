@@ -1,3 +1,1 @@
-const hello ='hello';
-
-console.log(hello);
+import './styles/navigation.scss';
