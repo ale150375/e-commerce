@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    filename: 'app.js'
   },
   devServer: {
     static: {
@@ -19,15 +19,23 @@ module.exports = {
     historyApiFallback: true,
   },
   resolve: {
-      extensions: ['.js']
+      extensions: ['.js', '.jsx']
   },
   module: {
     rules: [ {
-      test: /\.m?js$/,
+      test: /\.(js|jsx)$/,
       exclude: /node_modules/,
       use: {
         loader: 'babel-loader',
       }
+    },
+    {
+      test: /\.html$/,
+      use: [
+        {
+          loader: 'html-loader',
+        }
+      ]
     },
     {
       test: /\.s[ac]ss$/i,
