@@ -6,46 +6,52 @@ import logo from '../assets/icons/logo.svg';
 
 export const Header = () => {
     return (
-      <div className="nav-container">
-        <img src={logo} alt="logo" className="logo" />
-      <nav className="navbar">
-          <ul>
-              <li>
-                  <a href="/productos">Productos</a>
-              </li>
-              <li>
-                  <a href="/blog">Blog</a>
-              </li>
-              <li>
-                  <a href="/tienda">Tienda</a>
-              </li>
-              <li>
-                  <a href="/contacto">Contacto</a>
-              </li>
-              <li>
-                  <a href="cart"><img src={shoppingCart} alt="" className="shop"/></a>
-              </li>
-              <li className="navbar-input">
-                  <input type="text" placeholder=" Buscar producto" id="product" />
-                      <img src={search} alt="search"/>
-              </li>
-          </ul>
-      </nav>
-      <div className="navbar-mobile">
-          <ul>
-              <li className="nav-mobile">
-                  <a href="/shopping-cart" className="nav-mobile--cart">
-                      <img  src={shoppingCart} alt="shopping cart" />
-                  </a>
-              </li>
-                <li>
-                  <a href="menu" className="nav-mobile--menu">
-                      <img  src={menu} alt="menu" />
-                  </a>
-                </li>
-          </ul>
-      </div>
-  </div>
+        <header className="header">
+            <nav className="header__navbar">
+                <ul className="header__desktop-nav">
+                    <li className="header__nav-item">
+                        <img src={logo} alt="logo" className="logo" />
+                    </li>
+                    <li className="header__nav-item">
+                        <a href="/productos">Productos</a>
+                    </li>
+                    <li className="header__nav-item">
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li className="header__nav-item">
+                        <a href="/tienda">Tienda</a>
+                    </li>
+                    <li className="header__nav-item">
+                        <a href="/contacto">Contacto</a>
+                    </li>
+                    <li className="header__nav-item">
+                        <a href="cart">
+                            <img src={shoppingCart} alt="" className="shop" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div className="header__input-container">
+                <input className="header__input" type="text" placeholder=" Buscar producto" id="product" />
+                <img src={search} alt="search" />
+            </div>
+            <div className="header__navbar-mobile">
+                <ul className="header__navbar-mobile__icon-list">
+                    <li className="header__nav-mobile-item">
+                        <a href="/shopping-cart" className="nav-mobile--cart">
+                            <img src={shoppingCart} alt="shopping cart" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="menu" className="header__nav-mobile-item">
+                            <button className="header__hamburger-menu">
+                                <img src={menu} alt="menu" />
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
     );
 }
 

@@ -1,2 +1,6 @@
-@import './components/_vars';
+// helpers
+@import './helpers/_vars';
+@import './helpers/_mixins';
+
+// components
 @import './components/Header';

@@ -4,7 +4,7 @@ import { NotFound } from "@containers/NotFound";
 
 import { Router } from '@reach/router';
 import "@styles/global.css";
-import "../styles/components/Header.scss";
+import "../styles/main.scss";
 
 
 export const App = () => {

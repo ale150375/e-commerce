@@ -1,108 +1,33 @@
-@use 'vars';
-
-.nav-container {
+.header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 96px;
     margin: 0 auto;
-    background-color: var(--color-white);
-}
-.logo {
-    width: 48px;
-    height: 48px;
-}
-.navbar {
-    width: 1100px;
-}
-.navbar ul {
-    display: flex;
-    align-items: center;
-    margin-left: 28px;
-}
-.navbar ul li {
-    display: flex;
-    list-style: none;
-    margin-left: 16px;
-}
-.navbar ul li a {
-    text-decoration: none;
-    color: var(--color-grey-text);
-    font-size: 1.8rem;
-    font-weight: 400;
-}
-.navbar ul li a:hover {
-    cursor: pointer;
-}
-.shop {
-    width: 22px;
-    height: 18px;
-    margin-top: 12px;
-    align-items: center;
-}
-.navbar-mobile {
-    display: none;
-}
-.navbar-input input {
-    width: 100%;
-    height: 40px;
-    color: var(--color-grey-text);
-}
-.navbar-input input::placeholder {
-    color: #8a8b98;
-    cursor: context-menu;
-}
-.navbar-input img:hover {
-    cursor: pointer;
-}
 
-.navbar-mobile ul {
+    &__input-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-}
-.nav-mobile--cart, .nav-mobile--menu {
-    margin: 10px;
-}
-.nav-mobile--cart img, .nav-mobile--menu img {
-    width: 24px;
-    height: 24px;
-}
-.navbar-mobile ul li {
-    list-style: none;
-}
-@media (min-width: 768px) and (max-width: 1100px) {
-    .navbar {
-        min-width: 800px;
     }
-   .navbar-input input {
-       width: 80%;
-   }
-}
-
-
-@media (max-width: 768px) {
-    .logo {
+    &__navbar-mobile {
+        &__icon-list {
+            display: flex;
+        }
+        @include media-breakpoint-up('sm') {
+            display: none;
+        }
+    }
+    &__navbar {
         display: none;
+
+        @include media-breakpoint-up('sm'){
+            display: flex;
+        }
     }
-    .navbar ul li a{
-        display: none;
-    }
-    .navbar-input {
+
+    &__desktop-nav {
         display: flex;
-        justify-content: center;
+        list-style-type: none;
     }
-    .navbar-input input {
-        justify-content: center;
-        width: auto;
-        transition: all 0.5s ease-in-out;
+
+    &__nav-item {
+        margin: 0 10px;
     }
-    .navbar-mobile {
-        left: 0;
-        display: flex;
-        justify-content: left;
-        align-items: left;
-        flex-wrap: wrap;
-    }
-}
+}    
