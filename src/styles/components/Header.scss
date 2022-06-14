@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    &__input-container {
+        display: flex;
+    }
+    &__navbar-mobile {
+        &__icon-list {
+            display: flex;
+        }
+        @include media-breakpoint-up('sm') {
+            display: none;
+        }
+    }
+    &__navbar {
+        display: none;
+
+        @include media-breakpoint-up('sm'){
+            display: flex;
+        }
+    }
+
+    &__desktop-nav {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &__nav-item {
+        margin: 0 10px;
+    }
+}    
