@@ -37,8 +37,8 @@ export const Header = () => {
             </div>
             <div className="header__navbar-mobile">
                 <ul className="header__navbar-mobile__icon-list">
-                    <li className="header__nav-mobile-item">
-                        <a href="/shopping-cart" className="nav-mobile--cart">
+                    <li className="header__navbar-mobile-item">
+                        <a href="/shopping-cart" className="header__navbar-mobile-item--cart">
                             <img src={shoppingCart} alt="shopping cart" />
                         </a>
                     </li>

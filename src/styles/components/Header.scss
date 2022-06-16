@@ -1,33 +1,75 @@
 .header {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    background-color: var($color-white);
+    padding: 16px;
 
     &__input-container {
         display: flex;
+        width: 100%;
+        height: 40px;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+    &__input {
+        width: 100%;
+        min-width: 248px;
+    }
+    &__input::placeholder {
+        color: $color-grey-ph;
     }
     &__navbar-mobile {
         &__icon-list {
             display: flex;
+            list-style: none;
+            align-items: center;
+            line-height: 1.5;
+            margin-top: 22px;
+        }
+        &-item {
+            align-items: center;
+            padding: 0 16px;
+            list-style: none;
         }
         @include media-breakpoint-up('sm') {
             display: none;
         }
     }
+    &__hamburger-menu {
+        list-style: none;
+        margin-right: 18px;
+        border: none;
+        background: none;
+    }
     &__navbar {
         display: none;
 
+        line-height: 1.5rem;
+
         @include media-breakpoint-up('sm'){
             display: flex;
+            justify-content: center;
+            &__input-container {
+                margin-top: 36px;
+                margin-right: 16px;
+            }
         }
     }
 
     &__desktop-nav {
         display: flex;
         list-style-type: none;
+        align-items: center;
+        line-height: 1.5rem;
+        padding-top: 12px;
     }
-
-    &__nav-item {
+    
+    &__nav-item a {
         margin: 0 10px;
+        text-decoration: none;
+        color: $color-grey-text;
     }
 }    
