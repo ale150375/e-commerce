@@ -9,6 +9,8 @@ $color-red: #FB2448;
 $color-bg: #EBEBEB;
 $color-black: #111111;
 $color-grey-ph: #c2c2c2;
+$color-bc-hero: #4853c2;
+
 
 // breakpoints
 $screen-tiny: 360px;
@@ -27,3 +29,9 @@ $grid-breakpoints: (
 		lg: $screen-large,
 		xl: $screen-x-large
 ) !default;
+
+//fonts
+$font-josefin-sans: 'Josefin Sans', sans-serif;
+$font-lato: 'Lato', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+$font-open-sans: 'Open Sans', sans-serif;
