@@ -12,7 +12,7 @@ export const Hero = () => {
                 <a className="hero__component--description-link" href="/">Comprar ahora</a>
             </div>
             <div className="hero__component--image">
-                <img src={watch} alt="" />
+                <img src={watch} alt="watch offer" />
             </div>
         </section>
         <section className="hero__component">
@@ -21,7 +21,7 @@ export const Hero = () => {
                 <a className="hero__component--description-link" href="/">Comprar ahora</a>
             </div>
             <div className="hero__component--image">
-                <img src={auric} alt="" />
+                <img src={auric} alt="headset offer" />
             </div>
         </section>
     </section>
