@@ -1,6 +1,8 @@
 import React from 'react';
 import { Header } from "@containers/Header";
+import { Hero } from "@containers/Hero";
 import { NotFound } from "@containers/NotFound";
+
 
 import { Router } from '@reach/router';
 import "@styles/global.css";
@@ -9,9 +11,14 @@ import "../styles/main.scss";
 
 export const App = () => {
     return (
-        <Router>
-                <Header path='/header' />
-                <NotFound default />
-        </Router>
+        <>
+
+                <Header default />
+
+                <Router>
+                        <Hero path='/hero' />
+                      
+                </Router>
+        </>
 );
 }
