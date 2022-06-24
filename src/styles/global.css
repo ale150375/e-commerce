@@ -6,13 +6,5 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Inter', sans-serif;
 }
-body {
-    background-color: var(--color-bg);
-    color: var(--color-black);
-    font-size: 1.6rem;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+

@@ -1,6 +1,6 @@
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 16px;
     width: 100%;
@@ -10,15 +10,22 @@
     scroll-snap-type: x proximity;
     background-color: $color-bc-hero;
 
+    @include media-breakpoint-up('sm') {
+        justify-content: center;
+    }
+
     &__component {
         scroll-snap-align: center;
         display: flex;
         width: 246px;
+        max-width: 500px;
         height: 128px;
         margin-right: 16px;
         padding: 16px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         background: linear-gradient(105.15deg, #5465FF 0%, #B654EF 100%);
+
+
 
         &--description {
             font-family: $font-josefin-sans;
@@ -35,6 +42,7 @@
                 line-height: 1.8rem;
                 color: $color-white;
             }
+
             &-link {
                 font-family: $font-lato;
                 font-size: 1rem;

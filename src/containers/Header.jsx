@@ -32,22 +32,20 @@ export const Header = () => {
                 </ul>
             </nav>
             <div className="header__input-container">
-                <input className="header__input" type="text" placeholder=" Buscar producto" id="product" />
+                <input className="header__input-container--box" type="text" placeholder=" Buscar producto" id="product" />
                 <img src={search} alt="search" />
             </div>
             <div className="header__navbar-mobile">
                 <ul className="header__navbar-mobile__icon-list">
-                    <li className="header__navbar-mobile-item">
-                        <a href="/shopping-cart" className="header__navbar-mobile-item--cart">
+                    <li className="header__navbar-mobile__icon-list--item">
+                        <button className="header__navbar-mobile__icon-list--item-cart">
                             <img src={shoppingCart} alt="shopping cart" />
-                        </a>
+                        </button>
                     </li>
-                    <li>
-                        <a href="menu" className="header__nav-mobile-item">
-                            <button className="header__hamburger-menu">
+                    <li className="header__navbar-mobile__icon-list--item">
+                            <button className="header__navbar-mobile__icon-list--item-hamburger-menu">
                                 <img src={menu} alt="menu" />
                             </button>
-                        </a>
                     </li>
                 </ul>
             </div>
