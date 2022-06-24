@@ -1,13 +1,13 @@
 import React from 'react';
 import { Header } from "@containers/Header";
 import { Hero } from "@containers/Hero";
-import { ResultList } from "@containers/ResultListOffers";
+import { Card } from "@containers/Card";
+import { ResultList } from '@containers/ResultList';
 import { NotFound } from "@containers/NotFound";
 
 import { Router } from '@reach/router';
 import "@styles/global.css";
 import "../styles/main.scss";
-
 
 export const App = () => {
     return (
@@ -15,7 +15,7 @@ export const App = () => {
         <Header default />
         <Hero path='/hero' />
         <Router>
-          <ResultList path='/resultList' />
+          <ResultList path='/result-list' />
         </Router>
       </>
     );
