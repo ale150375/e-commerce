@@ -45,6 +45,14 @@ module.exports = {
       ]
     },
     {
+      test: /\.json$/,
+      use: [
+        {
+          loader: 'json-loader'
+        }
+      ]
+    },
+    {
       test: /\.(css|scss)$/i,
       use: [
         'style-loader',
