@@ -6,6 +6,7 @@ export const data = [
     description: 'La notebook más delgada y ligera de Apple viene con los superpoderes de...',
     ctaLabel: 'Comprar',
     ctaLink: '/comprar',
+    path: '/products/tech/macbook/13/macbook-pro-13-2020-256gbssd-m1',
     price: '25'
   },
   {
@@ -15,6 +16,7 @@ export const data = [
     description: 'La notebook más delgada y ligera de Apple viene con los superpoderes de...',
     ctaLabel: 'Comprar',
     ctaLink: '/comprar',
+    path: '/products/tech/macbook/13/macbook-pro-13-2020-256gbssd-m1',
     price: '25'
   },
   {
@@ -24,6 +26,7 @@ export const data = [
     description: 'La notebook más delgada y ligera de Apple viene con los superpoderes de...',
     ctaLabel: 'Comprar',
     ctaLink: '/comprar',
+    path: '/products/tech/macbook/13/macbook-pro-13-2020-256gbssd-m1',
     price: '25'
   },
   {
@@ -33,6 +36,7 @@ export const data = [
     description: 'La notebook más delgada y ligera de Apple viene con los superpoderes de...',
     ctaLabel: 'Comprar',
     ctaLink: '/comprar',
+    path: '/products/tech/macbook/13/macbook-pro-13-2020-256gbssd-m1',
     price: '25'
   },
   {
@@ -42,6 +46,7 @@ export const data = [
     description: 'La notebook más delgada y ligera de Apple viene con los superpoderes de...',
     ctaLabel: 'Comprar',
     ctaLink: '/comprar',
+    path: '/products/tech/macbook/13/macbook-pro-13-2020-256gbssd-m1',
     price: '25'
   },
   {
@@ -51,6 +56,7 @@ export const data = [
     description: 'La notebook más delgada y ligera de Apple viene con los superpoderes de...',
     ctaLabel: 'Comprar',
     ctaLink: '/comprar',
+    path: '/products/tech/macbook/13/macbook-pro-13-2020-256gbssd-m1',
     price: '25'
   },
   {
@@ -60,6 +66,7 @@ export const data = [
     description: 'La notebook más delgada y ligera de Apple viene con los superpoderes de...',
     ctaLabel: 'Comprar',
     ctaLink: '/comprar',
+    path: '/products/tech/macbook/13/macbook-pro-13-2020-256gbssd-m1',
     price: '25'
   },
   {
@@ -69,6 +76,7 @@ export const data = [
     description: 'La notebook más delgada y ligera de Apple viene con los superpoderes de...',
     ctaLabel: 'Comprar',
     ctaLink: '/comprar',
+    path: '/products/tech/macbook/13/macbook-pro-13-2020-256gbssd-m1',
     price: '25'
   },
   

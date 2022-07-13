@@ -15,7 +15,7 @@ export const App = () => {
         <Header default />
         <Hero path='/hero' />
         <Router>
-          <ResultList path='/result-list' />
+          <ResultList path='/' />
         </Router>
       </>
     );

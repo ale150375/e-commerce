@@ -4,7 +4,6 @@
     background-color: $color-bg;
     font-family: $font-inter;
     display: flex;
-    cursor: pointer;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,6 +27,7 @@
         margin: 16px;
         padding: 16px;
         background-color: $color-white;
+        cursor: pointer;
 
 
         @include media-breakpoint-up('sm') {

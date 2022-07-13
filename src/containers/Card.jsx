@@ -1,17 +1,14 @@
 import React from 'react';
 import macbook from '../assets/images/macbook.svg';
+import { Link } from '@reach/router'
 
-export const Card = ({img, title, description, ctaLabel, ctaLink, price}) => {
+export const Card = ({img, path, title, description, ctaLabel, ctaLink, price}) => {
     return (
-      <div className='listOffers'>
-        
-
+      <Link to={path} className='listOffers'>
         <div className='listOffers__content'>
-        
           <div className='listOffers__content--image'>
             <img src={macbook} alt='macbook offer' />
           </div>
-
           <div className='listOffers__contentDesc'>
             <h2 className='listOffers__contentDesc--title'>
               {title}
@@ -33,7 +30,7 @@ export const Card = ({img, title, description, ctaLabel, ctaLink, price}) => {
             </button>
           </div>
         </div>
-      </div>
+      </Link>
     );
 }
 

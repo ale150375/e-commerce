@@ -11,6 +11,7 @@ export const ResultList = ({cards}) => {
       {
         data.map(card => {
           return <Card 
+                    path={card.path}
                     key={card.id}
                     description={card.description}
                     img={card.img}
