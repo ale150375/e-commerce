@@ -19,6 +19,7 @@ export const ResultList = ({cards}) => {
                     ctaLabel={card.ctaLabel}
                     ctaLink={card.ctaLink}
                     price={card.price}
+                    priceNone={card.priceNone}
                   />
         })
       }
