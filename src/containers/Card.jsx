@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Rating } from 'react-simple-star-rating';
 import macbook from '../assets/images/macbook.svg';
 
-export const Card = ({img, title, description, ctaLabel, ctaLink, price}) => {
+
+export const Card = ({img, title, description, ctaLabel, ctaLink, price, priceNone}) => {
+
+    const [rating, setRating] = useState(0);
+    const handleRating = (rate) => {
+      setRating(rate)
+    }
     return (
-      <div className='listOffers'>
+      <div className='listOffers' >
         
 
         <div className='listOffers__content'>
@@ -18,8 +25,11 @@ export const Card = ({img, title, description, ctaLabel, ctaLink, price}) => {
             </h2>
             <div className='listOffers__contentDesc'>
               <span className='listOffers__contentDesc--price-on'>$ {price}</span>
-              <span className='listOffers__contentDesc--price-none'>$25,99</span>
-              <span className='listOffers__contentDesc--stars'>⭐️⭐️⭐️⭐️</span>
+              <span className='listOffers__contentDesc--price-none'> ${priceNone}</span>
+              <span className='listOffers__contentDesc--stars' >
+                <Rating onclick={handleRating} ratingValue={rating} size='20px'/>
+                
+              </span>
             </div>
             <p className='listOffers__contentDesc--description'>
               {description}

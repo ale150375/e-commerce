@@ -26,13 +26,13 @@ export const Header = () => {
                     </li>
                     <li className="header__nav-item">
                         <a href="cart">
-                            <img src={shoppingCart} alt="" className="shop" />
+                            <img src={shoppingCart} alt=" buy cart" className="shop" />
                         </a>
                     </li>
                 </ul>
             </nav>
             <div className="header__input-container">
-                <input className="header__input-container--box" type="text" placeholder=" Buscar producto" id="product" />
+                <input className="header__input-container--box" type="search" placeholder=" Buscar producto" id="product" />
                 <img src={search} alt="search" />
             </div>
             <div className="header__navbar-mobile">

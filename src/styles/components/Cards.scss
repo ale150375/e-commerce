@@ -1,6 +1,5 @@
 .listOffers {
     width: 100%;
-    padding-top: 2px;
     background-color: $color-bg;
     font-family: $font-inter;
     display: flex;
@@ -11,13 +10,6 @@
     align-items: center;
 
 
-    &__title {
-        margin: 16px;
-        color: $color-grey-text;
-        align-self: start;
-
-
-    }
 
     &__content {
         display: flex;
@@ -31,6 +23,7 @@
 
 
         @include media-breakpoint-up('sm') {
+            display: flex;
             flex-direction: row;
             align-items: center;
 
@@ -63,6 +56,7 @@
 
         &--price-on {
             color: $color-grey-text;
+            margin-right: 16px;
 
         }
 
@@ -70,6 +64,12 @@
             text-decoration-line: line-through;
             color: #FA3BE5;
 
+        }
+
+        &--stars {
+            padding: 16px;
+            margin-left: 26px;
+        
         }
 
         &--description {
@@ -82,6 +82,7 @@
         }
 
         @include media-breakpoint-up('sm') {
+            width: 60%;
             flex-direction: row;
             align-items: center;
 

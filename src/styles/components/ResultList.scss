@@ -1,0 +1,12 @@
+
+.result-list {
+    background-color: $color-bg;
+
+    &__title {
+        padding: 16px;
+        color: $color-grey-text;
+        align-self: start;
+        font-family: $font-inter;
+    }
+
+}
