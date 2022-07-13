@@ -3,8 +3,7 @@ import { Header } from "@containers/Header";
 import { Hero } from "@containers/Hero";
 import { Card } from "@containers/Card";
 import { ResultList } from '@containers/ResultList';
-import { NotFound } from "@containers/NotFound";
-import { Description } from "@containers/Description";
+import { NotFound } from "@containers/NotFound";  
 
 import { Router } from '@reach/router';
 import "@styles/global.css";
